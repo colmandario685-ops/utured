@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #0b5ed7;
+    --primary-hover: #0a58ca;
+    --bg-gradient: linear-gradient(135deg, #0d6efd 0%, #03285c 100%);
+    --card-bg: #ffffff;
+    --text-color: #212529;
+    --border-color: #dee2e6;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-gradient);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: flex;
+    width: 850px;
+    max-width: 90%;
+    overflow: hidden;
+}
+
+.brand-section {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand-section h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.form-section {
+    padding: 40px;
+    width: 60%;
+}
+
+.auth-tabs {
+    display: flex;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 25px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    font-weight: bold;
+}
+
+.auth-form h2 {
+    margin-top: 0;
+    color: var(--text-color);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.form-actions {
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.forgot-pass {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-hover);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 380px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-cancel {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}

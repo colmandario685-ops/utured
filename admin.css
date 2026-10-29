@@ -1,0 +1,277 @@
+/* Hero Banner para Admin */
+.admin-hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+    color: white;
+}
+
+.admin-hero h1 {
+    color: #ffffff !important;
+}
+
+.admin-hero p {
+    color: #cbd5e1 !important;
+}
+
+.admin-hero-icon {
+    font-size: 4rem;
+}
+
+.btn-logout-head {
+    color: #fca5a5;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+/* Tarjeta contenedora principal */
+.admin-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    border: 1px solid var(--border-color, #e2e8f0);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.subtitle-text {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+/* Tabla Administrativa */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.admin-table th {
+    background-color: #0f3273;
+    color: white;
+    padding: 12px;
+    font-size: 0.85rem;
+    text-align: left;
+}
+
+.admin-table td {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 12px;
+    font-size: 0.85rem;
+    color: #334155;
+}
+
+/* Badges de Roles */
+.role-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.badge-admin {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.badge-student {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+/* Botones de acción */
+.actions-cell {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-act {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.78rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-edit {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.btn-edit:hover {
+    background-color: #bae6fd;
+}
+
+.btn-delete {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.btn-delete:hover {
+    background-color: #fca5a5;
+}
+
+.current-user-tag {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+/* Bandeja de Mensajes */
+.messages-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.message-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.msg-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.msg-sender {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.msg-email {
+    color: #0284c7;
+    font-size: 0.85rem;
+}
+
+.msg-date {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.msg-subject {
+    margin: 5px 0 8px 0;
+    color: #0f172a;
+}
+
+.msg-text {
+    font-size: 0.9rem;
+    color: #334155;
+    background: white;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #f1f5f9;
+}
+
+.reply-box {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reply-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.88rem;
+    box-sizing: border-box;
+}
+
+.btn-reply {
+    align-self: flex-end;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+}
+
+/* Modal Pop-up */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(15, 23, 42, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-overlay.hidden {
+    display: none !important;
+}
+
+.modal-box {
+    background: white;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: #0f3273;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.modal-form .form-group {
+    margin-bottom: 14px;
+}
+
+.modal-form label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #334155;
+}
+
+.modal-form input, .modal-form select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-cancel {
+    background: #e2e8f0;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
